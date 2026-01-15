@@ -1,0 +1,5 @@
+.idea
+test
+.env
+unsloth_compiled_cache
+faiss_db_v2
