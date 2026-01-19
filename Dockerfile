@@ -34,6 +34,8 @@ RUN conda run -n torch nvidia-smi && \
 RUN conda run -n torch pip install ipykernel && \
     conda run -n torch python -m ipykernel install --user --name torch --display-name "torch"
 
+RUN export HF_HOME="/path/to/your/cache"
+RUN export HF_ENDPOINT="https://hf-mirror.com"
 # 安装指定的深度学习库
 # 注意：flash-attn 和 unsloth 对环境依赖极高，建议分开安装以方便排查错误
 RUN conda run -n torch pip install \
