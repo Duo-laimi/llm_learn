@@ -36,7 +36,7 @@ simple_chain = summarize_website | generate_pdf
 
 from langchain_classic.tools import Tool
 
-# 输入和输出都是str
+# 输入和输出都是str，通过args_schema实现更复杂的输入控制
 simple_tool = Tool.from_function(
     func=simple_chain.invoke,
     description="访问指定网站，并进行总结，将结果保存为pdf文件。",
