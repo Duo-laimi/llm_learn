@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "weather": {
+      "transport": "sse",
+      "url": "http://localhost:64342/sse",
+      "headers": {
+        "IJ_MCP_SERVER_PROJECT_PATH": ""
+      }
+    }
+  }
+}
+
